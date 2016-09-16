@@ -161,7 +161,7 @@ define([
 					}else{
 						event.target.mute();
 					}
-					event.target.setVolume(10);
+					event.target.setVolume(0);
 					event.target.playVideo();
 				}
 				
@@ -173,6 +173,13 @@ define([
 
 					// UNSTARTED
 					if (event.data == YT.PlayerState.UNSTARTED){
+
+						setTimeout(function(){
+							event.target.setVolume(5);
+						}, 1000);
+						setTimeout(function(){
+							event.target.setVolume(10);
+						}, 2000);
 
 						// Como no empezo, remuevo class loaded
 						self.$el.find('.video-bg').removeClass('loaded');
@@ -198,8 +205,19 @@ define([
 
 						// Dejo reproducir 10 segundos y lo cambio al siguiente video.
 						self.videoTimeout = setTimeout(function(){
-							self.changeSlide(featuredActual);
-						}, 10000);
+
+							self.$el.find('.video-bg').removeClass('loaded');
+
+							event.target.setVolume(5);
+							setTimeout(function(){
+								event.target.setVolume(0);
+							}, 1000);
+
+							setTimeout(function(){
+								self.changeSlide(featuredActual);
+							}, 550);
+
+						}, 9000);
 
 					}
 
@@ -289,12 +307,12 @@ define([
 
 			var self = this;
 
+			self.$el.removeClass('featured-'+self.featuredSelected);
+			self.$el.addClass('featured-'+position);
+
+			self.featuredSelected = position;
+
 			setTimeout(function(){
-
-				self.$el.removeClass('featured-'+self.featuredSelected);
-				self.$el.addClass('featured-'+position);
-
-				self.featuredSelected = position;
 
 				self.loadYouTubePlayer();
 
