@@ -1,0 +1,88 @@
+/* Phone */
+#id_phone{width:100%;}
+	
+	/* Map Pattern */
+	#id_phone .map-pattern{background-color:#f6f6f6;}
+
+	/* WTF */
+	#id_phone .wtf{position:relative;}
+	#id_phone .wtf .item{border-top:1px solid #ccc;padding:60px 0;}
+	#id_phone .wtf .item:first-child{border-top:0;}
+	#id_phone .wtf .item.green,
+	#id_phone .wtf .item.yellow{border-color:#84b37a;}
+	#id_phone .wtf .item.red{border-color:#c67364;}
+	#id_phone .wtf .item.violet{border-color:#6076b6;}
+	#id_phone .wtf footer.item{border-color:#6076b6;}
+	#id_phone .wtf .item > div{width:100%;max-width:480px;margin:0 auto;}
+
+	#id_phone .wtf .intro{text-align:center;}
+	#id_phone .wtf .intro h2{font-family:'Playfair Display', serif;font-size:60px;line-height:74px;}
+	#id_phone .wtf .intro h3{font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;font-size:32px;line-height:normal;}
+	#id_phone .wtf .intro .me-img{}
+	#id_phone .wtf .intro .go-portfolio{font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;font-size:16px;line-height:normal;text-transform:uppercase;}
+
+	#id_phone .wtf .item.text{background:#fff;}
+	#id_phone .wtf .item.text h4{font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;font-size:20px;line-height:normal;padding-bottom:30px;}
+	#id_phone .wtf .item.text p{padding-bottom:30px;font-size:18px;line-height:25px;}
+	#id_phone .wtf .item.text p:last-child{padding-bottom:0;}
+	#id_phone .wtf .item.text p a{font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;text-decoration:underline;}
+
+/* Media queries */
+@media only screen and (max-width: 480px){
+	
+	#id_phone .wtf .item{padding:40px 10px;}
+	#id_phone .wtf .item.intro{padding-left:0;padding-right:0;} 
+	#id_phone .wtf .item > div{max-width:none;} 
+
+	#id_phone .wtf .intro h2{font-size:45px;line-height:54px;padding-left:10px;padding-right:10px;}
+	#id_phone .wtf .intro h3{font-size:26px;padding-left:10px;padding-right:10px;}
+	#id_phone .wtf .intro .go-portfolio{font-size:14px;padding-left:10px;padding-right:10px;}
+
+	#id_phone .wtf .item.text h4{font-size:18px;}
+	#id_phone .wtf .item.text p{font-size:16px;line-height:23px;}
+	
+}
+
+
+
+
+/*
+
+
+
+	#id_phone .wtf .structure .item strong,
+	#id_phone .wtf .structure .item span{position:absolute;left:3.125vw;right:3.125vw;font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;display:block;}
+	#id_phone .wtf .grid{z-index:400;}
+	#id_phone .wtf .structure{z-index:500;position:absolute;border-bottom:1px solid rgba(0,0,0,.20);}
+	#id_phone .wtf .structure .item{box-sizing:border-box;}
+	#id_phone .wtf .structure .item:nth-child(1){-webkit-flex:0 1 100vw;flex:0 1 100vw;border-bottom:1px solid rgba(0,0,0,.20);border-top:1px solid rgba(0,0,0,.20);}
+	#id_phone .wtf .structure .item:nth-child(2){height:50vh;background:#fff;}
+	#id_phone .wtf .structure .item:nth-child(3){-webkit-flex:0 1 50vw;flex:0 1 50vw;height:50vh;background:#fff;border-left:1px solid rgba(0,0,0,.20);border-right:1px solid rgba(0,0,0,.20);}
+	#id_phone .wtf .structure .item:nth-child(4){height:50vh;background:#f6f6f6;}
+	
+	#id_phone .wtf .item strong{bottom:2.6vw;line-height:2.084vw;font-size:1.77vw;}
+	#id_phone .wtf .item span{top:2.8vw;font-size:0.83vw;text-transform:uppercase;}
+	#id_phone .wtf .item ul{padding:5.5vw 3.125vw 0 3.125vw;}
+	#id_phone .wtf .item li{font-size:0.9375vw;line-height:1.5625vw;}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#id_phone .wtf .item:nth-child(5),
+	#id_phone .wtf .item:nth-child(6),
+	#id_phone .wtf .item:nth-child(7),
+	#id_phone .wtf .item:nth-child(8){position:relative;-webkit-transition:.55s cubic-bezier(.52,.01,.16,1);-moz-transition:.55s cubic-bezier(.52,.01,.16,1);transition:.55s cubic-bezier(.52,.01,.16,1);border-top:1px solid rgba(0,0,0,.20);}
+	#id_phone .wtf .item:nth-child(5){-webkit-animation:entryItem .55s;animation:entryItem .55s;}
+	#id_phone .wtf .item:nth-child(6){-webkit-animation:entryItem .65s;animation:entryItem .65s;border-left:1px solid rgba(0,0,0,.20);}
+	#id_phone .wtf .item:nth-child(7){-webkit-animation:entryItem .80s;animation:entryItem .80s;border-left:1px solid rgba(0,0,0,.20);border-right:1px solid rgba(0,0,0,.20);}
+	#id_phone .wtf .item:nth-child(8){-webkit-animation:entryItem .85s;animation:entryItem .85s;}*/

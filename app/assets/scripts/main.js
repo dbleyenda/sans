@@ -8,7 +8,8 @@ require.config({
 		templates: '../../templates',
 		text: "../../bower_components/text/text",
 		precook: '../../vendor/precook-backbone/dist/precook-backbone.min',
-		youTubeIFrame: 'https://www.youtube.com/iframe_api?noext'
+		mobileDetect: '../../bower_components/mobile-detect/mobile-detect.min',
+		youTubeIFrame: 'https://www.youtube.com/iframe_api?noext',
 	},
 	shim: {
 		youTubeIFrame: {

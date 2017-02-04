@@ -3,17 +3,25 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  'mobileDetect',
   'views/home/HomeView',
+  'views/about/AboutView',
   'views/projects/ProjectsView',
   'views/projects/ProjectDetailView',
   'views/menu/MenuView',
-], function($, _, Backbone, HomeView, ProjectsView, ProjectDetailView, MenuView){
+  'views/phone/PhoneView',
+], function($, _, Backbone, MobileDetect, HomeView, AboutView, ProjectsView, ProjectDetailView, MenuView, PhoneView){
 
-  var AppRouter = Backbone.Router.extend({
+  // Desktop Router
+  var DesktopRouter = Backbone.Router.extend({
 
     burger: 0,
 
     routes: {
+
+      // About
+      'wtf': 'aboutPage',
+      'about': 'aboutPage',
 
       // Project detail
       'projects/:id': 'projectDetailPage',
@@ -21,7 +29,7 @@ define([
       // Projects
       'projects': 'projectsPage',
       
-      // Default - Game
+      // Default
       '*actions': 'defaultAction'
     },
 
@@ -31,6 +39,15 @@ define([
 
        // Menu
       var menuView = new MenuView();
+
+      // Projects
+      this.on('route:aboutPage', function(actions){
+        this.destroyView();
+        setTimeout(function(){
+          $('.layout').append('<section id="id_about" class="loading"></section>');
+          var aboutView = self.showView( new AboutView() );
+        }, 600);
+      });
 
       // Project Detail
       this.on('route:projectDetailPage', function(id){
@@ -104,6 +121,56 @@ define([
 
   });
 
-  return AppRouter;
+  // Phone Router
+  var PhoneRouter = Backbone.Router.extend({
+
+    routes: {
+
+      // Default
+      '*actions': 'defaultAction'
+    },
+
+    initialize: function(){
+
+      var self = this;
+
+      // Default
+      this.on('route:defaultAction', function(actions){
+        $('.layout').append('<section id="id_phone" class="loading"></section>');
+        var phoneView = self.showView( new PhoneView() );
+      });
+
+      Backbone.history.start();
+
+    },
+
+    showView: function(view) {
+      return view;
+    },
+
+  });
+
+  // Check device and return router  
+  var md = new MobileDetect(window.navigator.userAgent);
+
+  // console.log( md.mobile() );
+  // console.log( md.phone() );
+  // console.log( md.tablet() ); 
+
+  // If is mobile
+  // if( !_.isNull( md.mobile() ) ){
+  if( _.isNull( md.mobile() ) ){
+
+    // If is phone
+    // if( !_.isNull( md.phone() ) ){
+    if( _.isNull( md.phone() ) ){
+      return PhoneRouter;
+    }else{
+      return DesktopRouter;  
+    }
+
+  }else{
+    return DesktopRouter;
+  }
 
 });

@@ -234,6 +234,10 @@ a:hover .icon-arrow svg .theArrow,
 .icon-arrow svg:hover .theArrow{fill:#fff;}
 
 
+/* Phone configs */
+body.phone-page{overflow:auto;}
+body.phone-page .map-pattern{position:fixed;}
+
 
 
 
