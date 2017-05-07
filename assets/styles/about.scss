@@ -1,0 +1,44 @@
+/* About me */
+#id_about{
+	
+	/* Map Pattern */
+	.map-pattern{background-color:#f6f6f6;}
+
+	/* WTF */
+	.wtf{width:100vw;height:100vh;position:relative;
+		.structure{z-index:500;position:absolute;border-bottom:1px solid rgba(0,0,0,.20);
+			.item{box-sizing:border-box;
+				strong,
+				span{position:absolute;left:3.125vw;right:3.125vw;font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;display:block;}
+				strong{bottom:2.6vw;line-height:2.084vw;font-size:1.77vw;}
+				span{top:2.8vw;font-size:0.83vw;text-transform:uppercase;}
+				ul{padding:5.5vw 3.125vw 0 3.125vw;}
+				li{font-size:0.9375vw;line-height:1.5625vw;}
+				h2{font-family:'Playfair Display', serif;font-size:3.125vw;white-space:nowrap;padding:3vw 3.125vw 1.2vw 28.125vw;line-height:3.125vw;}
+				h3{font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;font-size:1.875vw;white-space:nowrap;padding:0 3.125vw 0 28.125vw;line-height:1.875vw;}
+				&:nth-child(1){-webkit-flex:0 1 100vw;flex:0 1 100vw;border-bottom:1px solid rgba(0,0,0,.20);border-top:1px solid rgba(0,0,0,.20);}
+				&:nth-child(2){height:50vh;background:#fff;}
+				&:nth-child(3){-webkit-flex:0 1 50vw;flex:0 1 50vw;height:50vh;background:#fff;border-left:1px solid rgba(0,0,0,.20);border-right:1px solid rgba(0,0,0,.20);}
+				&:nth-child(4){height:50vh;background:#f6f6f6;}
+				&:nth-child(5),
+				&:nth-child(6),
+				&:nth-child(7),
+				&:nth-child(8){position:relative;-webkit-transition:.55s cubic-bezier(.52,.01,.16,1);-moz-transition:.55s cubic-bezier(.52,.01,.16,1);transition:.55s cubic-bezier(.52,.01,.16,1);border-top:1px solid rgba(0,0,0,.20);}
+				&:nth-child(5){-webkit-animation:entryItem .55s;animation:entryItem .55s;}
+				&:nth-child(6){-webkit-animation:entryItem .65s;animation:entryItem .65s;border-left:1px solid rgba(0,0,0,.20);}
+				&:nth-child(7){-webkit-animation:entryItem .80s;animation:entryItem .80s;border-left:1px solid rgba(0,0,0,.20);border-right:1px solid rgba(0,0,0,.20);}
+				&:nth-child(8){-webkit-animation:entryItem .85s;animation:entryItem .85s;}
+				.me-img{width:100%;height:100%;background-size:cover;background-repeat:no-repeat;background-position:center center;background-image:url(../../assets/images/about/im_nacho.jpg);}
+				&.text{padding:2.8vw 3.125vw;background:#fff;}
+				&.text p{padding-bottom:1.2vw;font-size:0.93vw;line-height:1.6vw;}
+				&.text p:last-child{padding-bottom:0;}
+				&.text p a{font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;}
+			}
+		}
+		.grid{z-index:400;}
+	}
+
+}
+
+/* Hide grid */
+.about-page .grid{opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}

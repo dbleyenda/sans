@@ -3,3 +3,7 @@ bower_components
 .bower-registry
 .bower-tmp
 .DS_Store
+node_modules
+dist
+.tmp
+.sass-cache
