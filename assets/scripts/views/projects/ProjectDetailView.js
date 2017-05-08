@@ -127,7 +127,10 @@ define([
 			var pID = parseInt(this.projectID);
 
 			if( 
+				pID == 3 ||
 				pID == 4 || 
+				pID == 5 || 
+				pID == 6 || 
 				pID == 10 ||
 				pID == 12 ||
 				pID == 16

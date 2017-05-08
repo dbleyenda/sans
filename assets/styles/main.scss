@@ -227,7 +227,14 @@ body.white-logo{
 		}
 	}
 
-	&.detail-page .icon-scroll svg{fill:#eee;}
+	&.detail-page{
+		.icon-scroll svg{fill:#eee;}
+		.item a.close{color:#eee;
+			&:hover{color:#fff;}
+		}
+	}
+
+
 
 }
 	
