@@ -45,6 +45,7 @@ var IMAGES_JSON = {
       // "projects/01/E.jpg",
       // "projects/01/F.jpg",
       // "projects/01/G.jpg",
+      // "projects/01/H.jpg",
       "bg_map-pattern.png",
     ],
 
@@ -94,6 +95,10 @@ var IMAGES_JSON = {
       "projects/05/A.jpg",
       // "projects/05/B.jpg",
       // "projects/05/C.jpg",
+      // "projects/05/D.jpg",
+      // "projects/05/E.jpg",
+      // "projects/05/F.jpg",
+      // "projects/05/G.jpg",
       "bg_map-pattern.png",
     ],
 
