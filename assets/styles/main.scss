@@ -1,21 +1,21 @@
 /* Fonts */
 @font-face {
   font-family:'HelveticaNeue-Roman';
-  src:url(../../assets/fonts/HelveticaNeue-Roman/HelveticaNeue-Roman.eot?#iefix) format('embedded-opentype'),  url(../../assets/fonts/HelveticaNeue-Roman/HelveticaNeue-Roman.otf)  format('opentype'),
+  src:url(../../assets/fonts/HelveticaNeue-Roman/HelveticaNeue-Roman.eot?#iefix) format('embedded-opentype'),
 	     url(../../assets/fonts/HelveticaNeue-Roman/HelveticaNeue-Roman.woff) format('woff'), url(../../assets/fonts/HelveticaNeue-Roman/HelveticaNeue-Roman.ttf)  format('truetype'), url(../../assets/fonts/HelveticaNeue-Roman/HelveticaNeue-Roman.svg#HelveticaNeue-Roman) format('svg');
   font-weight:normal;
   font-style:normal;
 }
 @font-face {
   font-family:'HelveticaNeue-Bold';
-  src:url(../../assets/fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix) format('embedded-opentype'),  url(../../assets/fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.otf)  format('opentype'),
+  src:url(../../assets/fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix) format('embedded-opentype'),
 	     url(../../assets/fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff) format('woff'), url(../../assets/fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf)  format('truetype'), url(../../assets/fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold) format('svg');
   font-weight:normal;
   font-style:normal;
 }
 @font-face {
   font-family:'HelveticaNeue-Light';
-  src:url(../../assets/fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix) format('embedded-opentype'),  url(../../assets/fonts/HelveticaNeue-Light/HelveticaNeue-Light.otf)  format('opentype'),
+  src:url(../../assets/fonts/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix) format('embedded-opentype'),
 	     url(../../assets/fonts/HelveticaNeue-Light/HelveticaNeue-Light.woff) format('woff'), url(../../assets/fonts/HelveticaNeue-Light/HelveticaNeue-Light.ttf)  format('truetype'), url(../../assets/fonts/HelveticaNeue-Light/HelveticaNeue-Light.svg#HelveticaNeue-Light) format('svg');
   font-weight:normal;
   font-style:normal;
@@ -168,7 +168,7 @@ section{
 		a{
 			& > span{position:relative;display:block;top:0.2083vw;font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:1800;
 				& > span{position:absolute;top:0;left:0;font-size:0.625vw;text-transform:uppercase;font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:1800;}
-				i.color-red{display:inline-block;font-style:normal;font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;height:11px;overflow:hidden;}
+				i.color-red{display:inline-block;font-style:normal;font-family:"HelveticaNeue-Bold", "Helvetica Neue Bold";font-weight:300;}
 			}
 		}
 
