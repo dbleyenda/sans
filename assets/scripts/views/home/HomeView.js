@@ -171,8 +171,8 @@ define([
 					// Logueo el cambio de status del video.
 					//console.log('STATE CHANGED', event.data)
 
-					// UNSTARTED
-					if (event.data == YT.PlayerState.UNSTARTED){
+					// BUFFERING or UNSTARTED
+					if (event.data == YT.PlayerState.BUFFERING || event.data == YT.PlayerState.UNSTARTED){
 
 						setTimeout(function(){
 							event.target.setVolume(5);
