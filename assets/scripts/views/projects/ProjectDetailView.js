@@ -129,7 +129,6 @@ define([
 			if( 
 				pID == 3 ||
 				pID == 4 || 
-				pID == 5 || 
 				pID == 6 || 
 				pID == 10 ||
 				pID == 12 ||
