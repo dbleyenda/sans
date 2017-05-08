@@ -87,6 +87,8 @@
 	#id_projectDetail .info .item.text{overflow:auto;padding:2.4vw 3.125vw;}
 	#id_projectDetail .info .item.text p{padding-bottom:1.2vw;font-size:0.9vw;line-height:1.6vw;}
 	#id_projectDetail .info .item.text p:last-child{padding-bottom:0;}
+	#id_projectDetail .info .item.text p a{text-decoration:underline;}
+	#id_projectDetail .info .item.text p a:hover{text-decoration:none;}
 
 	/* Screens */
 	#id_projectDetail .screens.black{background:#000;}
