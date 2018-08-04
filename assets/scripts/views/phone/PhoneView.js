@@ -14,6 +14,7 @@ define([
 		loaded: false,
 
 		events: {
+			'click .tc': 'trackClicks'
 		},
 
 		initialize: function(){
@@ -75,6 +76,57 @@ define([
 			this.render();
 
 		},
+
+		trackClicks: function(event){
+
+			var element = $(event.currentTarget);
+
+			//tc-email-bio
+			if(element.hasClass('tc-email-bio')){
+				mixpanel.track("Mobile - Email Bio clicked");
+			}
+
+			//tc-linkedin-bio
+			if(element.hasClass('tc-linkedin-bio')){
+				mixpanel.track("Mobile - LinkedIn Bio clicked");
+			}
+
+			//tc-email
+			if(element.hasClass('tc-email')){
+				mixpanel.track("Mobile - Email link clicked");
+			}
+
+			//tc-godesktop
+			if(element.hasClass('tc-godesktop')){
+				mixpanel.track("Mobile - Go to Desktop text clicked");
+			}
+
+			//tc-social-dribbble
+			if(element.hasClass('tc-social-dribbble')){
+				mixpanel.track("Mobile - Social - Dribbble link clicked");
+			}
+
+			//tc-social-behance
+			if(element.hasClass('tc-social-behance')){
+				mixpanel.track("Mobile - Social - Behance link clicked");
+			}
+
+			//tc-social-instagram
+			if(element.hasClass('tc-social-instagram')){
+				mixpanel.track("Mobile - Social - Instagram link clicked");
+			}
+
+			//tc-social-github
+			if(element.hasClass('tc-social-github')){
+				mixpanel.track("Mobile - Social - GitHub link clicked");
+			}
+
+			//tc-social-linkedin
+			if(element.hasClass('tc-social-linkedin')){
+				mixpanel.track("Mobile - Social - LinkedIn link clicked");
+			}
+
+		}
 
 	});
 

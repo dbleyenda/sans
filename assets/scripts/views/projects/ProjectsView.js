@@ -17,6 +17,7 @@ define([
 			'click a.unload': 'onUnloadPageClicked',
 			'mouseenter .item > a': 'onProjectMouseEnter',
 			'mouseleave .item > a': 'onProjectMouseLeave',
+			'click .tc': 'trackClicks'
 		},
 
 		initialize: function(){
@@ -140,6 +141,92 @@ define([
 				Backbone.View.prototype.remove.call(self);
 
 			}, 550);
+
+		},
+
+		trackClicks: function(event){
+
+			var element = $(event.currentTarget);
+
+			//tc-projects-1
+			if(element.hasClass('tc-projects-1')){
+				mixpanel.track("Projects - Junar link clicked");
+			}
+
+			//tc-projects-2
+			if(element.hasClass('tc-projects-2')){
+				mixpanel.track("Projects - Patin+Calle link clicked");
+			}
+
+			//tc-projects-3
+			if(element.hasClass('tc-projects-3')){
+				mixpanel.track("Projects - The Rocket link clicked");
+			}
+
+			//tc-projects-4
+			if(element.hasClass('tc-projects-4')){
+				mixpanel.track("Projects - Anne Frank link clicked");
+			}
+
+			//tc-projects-5
+			if(element.hasClass('tc-projects-5')){
+				mixpanel.track("Projects - Logistics Observatory link clicked");
+			}
+
+			//tc-projects-6
+			if(element.hasClass('tc-projects-6')){
+				mixpanel.track("Projects - By Pass Infographics link clicked");
+			}
+
+			//tc-projects-7
+			if(element.hasClass('tc-projects-7')){
+				mixpanel.track("Projects - Toches link clicked");
+			}
+
+			//tc-projects-8
+			if(element.hasClass('tc-projects-8')){
+				mixpanel.track("Projects - Memorize This link clicked");
+			}
+
+			//tc-projects-9
+			if(element.hasClass('tc-projects-9')){
+				mixpanel.track("Projects - Gargabe Time App link clicked");
+			}
+
+			//tc-projects-10
+			if(element.hasClass('tc-projects-10')){
+				mixpanel.track("Projects - Explorer TV link clicked");
+			}
+
+			//tc-projects-11
+			if(element.hasClass('tc-projects-11')){
+				mixpanel.track("Projects - Tablon Mag link clicked");
+			}
+
+			//tc-projects-12
+			if(element.hasClass('tc-projects-12')){
+				mixpanel.track("Projects - Whasher Machine link clicked");
+			}
+
+			//tc-projects-13
+			if(element.hasClass('tc-projects-13')){
+				mixpanel.track("Projects - Logo Compilation link clicked");
+			}
+
+			//tc-projects-14
+			if(element.hasClass('tc-projects-14')){
+				mixpanel.track("Projects - Signoseis link clicked");
+			}
+
+			//tc-projects-15
+			if(element.hasClass('tc-projects-14')){
+				mixpanel.track("Projects - TuMadre Films link clicked");
+			}
+
+			//tc-projects-16
+			if(element.hasClass('tc-projects-16')){
+				mixpanel.track("Projects - Vinolta link clicked");
+			}
 
 		}
 

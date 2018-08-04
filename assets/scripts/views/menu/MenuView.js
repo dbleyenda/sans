@@ -18,6 +18,7 @@ define([
 			'mouseenter .logo': 'onLogoMouseEnter',
 			'mouseleave .logo': 'onLogoMouseLeave',
 			'click a.unload': 'onUnloadPageClicked',
+			'click .tc': 'trackClicks'
 		},
 
 		initialize: function(){
@@ -89,6 +90,62 @@ define([
 			}, 550);
 
 		},
+
+		trackClicks: function(event){
+
+			var element = $(event.currentTarget);
+
+			//tc-home
+			if(element.hasClass('tc-home')){
+				mixpanel.track("Menu - Home link clicked");
+			}
+			
+			//tc-close-menu
+			if(element.hasClass('tc-close-menu')){
+				mixpanel.track("Menu - Close Menu link clicked");
+			}
+
+			//tc-about
+			if(element.hasClass('tc-about')){
+				mixpanel.track("Menu - About link clicked");
+			}
+
+			//tc-projects
+			if(element.hasClass('tc-projects')){
+				mixpanel.track("Menu - Projects link clicked");
+			}
+
+			//tc-email
+			if(element.hasClass('tc-email')){
+				mixpanel.track("Menu - Email link clicked");
+			}
+
+			//tc-social-dribbble
+			if(element.hasClass('tc-social-dribbble')){
+				mixpanel.track("Menu - Social - Dribbble link clicked");
+			}
+
+			//tc-social-behance
+			if(element.hasClass('tc-social-behance')){
+				mixpanel.track("Menu - Social - Behance link clicked");
+			}
+
+			//tc-social-instagram
+			if(element.hasClass('tc-social-instagram')){
+				mixpanel.track("Menu - Social - Instagram link clicked");
+			}
+
+			//tc-social-github
+			if(element.hasClass('tc-social-github')){
+				mixpanel.track("Menu - Social - GitHub link clicked");
+			}
+
+			//tc-social-linkedin
+			if(element.hasClass('tc-social-linkedin')){
+				mixpanel.track("Menu - Social - LinkedIn link clicked");
+			}
+
+		}
 
 	});
 

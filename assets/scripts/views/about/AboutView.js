@@ -15,6 +15,7 @@ define([
 
 		events: {
 			'click a.unload': 'onUnloadPageClicked',
+			'click .tc': 'trackClicks'
 		},
 
 		initialize: function(){
@@ -128,6 +129,22 @@ define([
 				Backbone.View.prototype.remove.call(self);
 
 			}, 550);
+
+		},
+
+		trackClicks: function(event){
+
+			var element = $(event.currentTarget);
+
+			//tc-email-bio
+			if(element.hasClass('tc-email-bio')){
+				mixpanel.track("About Me - Email Bio clicked");
+			}
+
+			//tc-linkedin-bio
+			if(element.hasClass('tc-linkedin-bio')){
+				mixpanel.track("About Me - LinkedIn Bio clicked");
+			}
 
 		}
 

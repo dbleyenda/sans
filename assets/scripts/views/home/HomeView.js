@@ -26,6 +26,7 @@ define([
 			'click #id_prev, #id_next': 'onNavFeaturedClicked',
 			'mousewheel': 'onMouseWheel',
 			'click #id_sound li': 'onToggleSoundClicked',
+			'click .tc': 'trackClicks'
 		},
 
 		initialize: function(){
@@ -252,6 +253,8 @@ define([
 							featuredActual = this.featuredSelected - 1;
 						}
 
+						mixpanel.track("Home - Previous Slide - Mousewheel scroll triggered");
+
 					}else{
 						
 						//console.log('scrolling down !');
@@ -261,6 +264,8 @@ define([
 						}else{
 							featuredActual = this.featuredSelected + 1;
 						}
+
+						mixpanel.track("Home - Next Slide - Mousewheel scroll triggered");
 
 					}
 
@@ -330,10 +335,16 @@ define([
 					this.player.mute();
 					window.videoVolumeStatus = 'muted';
 					element.addClass('muted');
+
+					mixpanel.track("Home - Sound off clicked");
+
 				}else{
 					this.player.unMute();
 					window.videoVolumeStatus = 'unMuted';
 					element.removeClass('muted');
+
+					mixpanel.track("Home - Sound On clicked");
+
 				}
 
 			}
@@ -380,6 +391,87 @@ define([
 				Backbone.View.prototype.remove.call(self);
 
 			}, 550);
+
+		},
+
+		trackClicks: function(event){
+
+			var element = $(event.currentTarget);
+
+			//tc-awwwards
+			if(element.hasClass('tc-awwwards')){
+				mixpanel.track("Home - Awwwards link clicked");
+			}
+
+			//tc-social-dribbble
+			if(element.hasClass('tc-social-dribbble')){
+				mixpanel.track("Home - Social - Dribbble link clicked");
+			}
+
+			//tc-social-behance
+			if(element.hasClass('tc-social-behance')){
+				mixpanel.track("Home - Social - Behance link clicked");
+			}
+
+			//tc-social-instagram
+			if(element.hasClass('tc-social-instagram')){
+				mixpanel.track("Home - Social - Instagram link clicked");
+			}
+
+			//tc-social-github
+			if(element.hasClass('tc-social-github')){
+				mixpanel.track("Home - Social - GitHub link clicked");
+			}
+
+			//tc-social-linkedin
+			if(element.hasClass('tc-social-linkedin')){
+				mixpanel.track("Home - Social - LinkedIn link clicked");
+			}
+
+			//tc-project-patincalle
+			if(element.hasClass('tc-project-patincalle')){
+				mixpanel.track("Home - Featured Project - Patin + Calle clicked");
+			}
+
+			//tc-project-junar
+			if(element.hasClass('tc-project-junar')){
+				mixpanel.track("Home - Featured Project - Junar clicked");
+			}
+
+			//tc-project-rocket
+			if(element.hasClass('tc-project-rocket')){
+				mixpanel.track("Home - Featured Project - The Rocket clicked");
+			}
+
+			//tc-project-annefrank
+			if(element.hasClass('tc-project-annefrank')){
+				mixpanel.track("Home - Featured Project - Anne Frank clicked");
+			}
+
+			//tc-about
+			if(element.hasClass('tc-about')){
+				mixpanel.track("Home - About link clicked");
+			}
+
+			//tc-projects
+			if(element.hasClass('tc-projects')){
+				mixpanel.track("Home - Projects link clicked");
+			}
+
+			//tc-email
+			if(element.hasClass('tc-email')){
+				mixpanel.track("Home - Email link clicked");
+			}
+
+			//tc-projects-prev
+			if(element.hasClass('tc-projects-prev')){
+				mixpanel.track("Home - Previous Slide - Arrow clicked");
+			}
+
+			//tc-projects-next
+			if(element.hasClass('tc-projects-next')){
+				mixpanel.track("Home - Next Slide - Arrow clicked");
+			}				
 
 		}
 

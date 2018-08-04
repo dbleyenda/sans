@@ -34,6 +34,7 @@ define([
 
 		events: {
 			'click a.unload': 'onUnloadPageClicked',
+			'click .tc': 'trackClicks'
 		},
 
 		initialize: function(options){
@@ -170,6 +171,45 @@ define([
 				Backbone.View.prototype.remove.call(self);
 
 			}, 550);
+
+		},
+
+		trackClicks: function(event){
+
+			var element = $(event.currentTarget),
+				projectName = $('#projectName').html();
+
+			//tc-project-close
+			if(element.hasClass('tc-project-close')){
+				mixpanel.track("Project "+this.projectID+" - Close link clicked");
+			}
+
+			//tc-project-prev
+			if(element.hasClass('tc-project-prev')){
+				prev = element.attr('title');
+				mixpanel.track("Project "+this.projectID+" ("+projectName+") - Prev link clicked - Going to "+prev);
+			}
+
+			//tc-project-next
+			if(element.hasClass('tc-project-next')){
+				next = element.attr('title');
+				mixpanel.track("Project "+this.projectID+" ("+projectName+") - Next link clicked - Going to "+next);
+			}
+
+			//tc-home
+			if(element.hasClass('tc-home')){
+				mixpanel.track("Project "+this.projectID+" - Home link clicked");
+			}
+
+			//tc-about
+			if(element.hasClass('tc-about')){
+				mixpanel.track("Project "+this.projectID+" - About link clicked");
+			}
+
+			//tc-projects
+			if(element.hasClass('tc-projects')){
+				mixpanel.track("Project "+this.projectID+" - Projects link clicked");
+			}
 
 		}
 
