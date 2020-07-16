@@ -1,0 +1,248 @@
+<!-- Detail -->
+<div class="detail" id="id_work-10">
+
+	<!-- Aperture -->
+	<div class="aperture">
+		
+		<!-- Main Image -->
+		<div class="main-img"></div>
+
+		<!-- Content -->
+		<div class="structure">
+
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item">
+				<a href="#/projects" class="close unload tc tc-project-close" title="Close project">X</a>
+			</div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item">
+				<i class="icon-scroll">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="159.734px" height="382.592px" viewBox="399.36 34.048 159.734 382.592"
+							 enable-background="new 399.36 34.048 159.734 382.592" xml:space="preserve">
+							<path d="M399.36,183.68v80.64c0,44.352,36.289,80.64,80.64,80.64s80.64-36.288,80.64-80.64v-80.64
+								c0-44.352-36.288-80.64-80.64-80.64S399.36,139.328,399.36,183.68z M480,120.96c34.496,0,62.72,28.224,62.72,62.72v80.64
+								c0,34.497-28.224,62.72-62.72,62.72s-62.72-28.224-62.72-62.72v-80.64C417.28,149.184,445.504,120.96,480,120.96z"/>
+							<path d="M480,197.12c4.928,0,8.96-4.032,8.96-8.96v-26.88c0-4.928-4.032-8.96-8.96-8.96s-8.96,4.032-8.96,8.96v26.88
+								C471.04,193.088,475.072,197.12,480,197.12z">
+								<animateTransform id="id_mouseWheel"
+									 attributeName="transform"
+									 attributeType="XML"
+									 type="translate"
+									 dur="3s"
+									 values="0,20;0,0;0,0;0,0;0,0;0,0;0,20;0,0;0,0;0,0;0,0;0,0;0,20"
+									 repeatCount="indefinite"/>
+							</path>
+							<path d="M473.729,413.952c1.791,1.792,4.031,2.688,6.271,2.688s4.48-0.896,6.271-2.688l22.4-22.4c3.584-3.584,3.584-8.96,0-12.544
+								s-8.96-3.584-12.544,0L480,395.136l-16.128-16.128c-3.584-3.584-8.96-3.584-12.544,0s-3.584,8.96,0,12.544L473.729,413.952z"/>
+							<path d="M473.729,34.048l-22.4,22.4c-3.584,3.584-3.584,8.96,0,12.544c1.792,1.792,4.032,2.688,6.271,2.688
+								c2.24,0,4.48-0.896,6.272-2.688L480,52.864l16.128,16.128c1.792,1.792,4.032,2.688,6.272,2.688c2.239,0,4.479-0.896,6.271-2.688
+								c3.584-3.584,3.584-8.96,0-12.544l-22.4-22.4C482.688,30.464,477.312,30.464,473.729,34.048z"/>
+						</svg>
+					</i>
+			</div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item red">
+				<span>University work</span>
+				<strong id="projectName">Explorer TV</strong>
+			</div>
+			<div class="item red">
+				<span>Year</span>
+				<strong>2015</strong>
+			</div>
+			<div class="item red">
+				<span>Location</span>
+				<strong>Argentina</strong>
+			</div>
+			<div class="item red">
+				<span>Deliverables</span>
+				<strong>Brand identity / Reel</strong>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Info -->
+	<div class="info">
+
+		<!-- Content -->
+		<div class="structure">
+
+			<div class="item">
+				<h2>Science nature channel concept</h2>
+			</div>
+			<div class="item">
+				<span>About this project</span>
+			</div>
+			<div class="item text">
+				<p>The need was to design an medium complexity graphic system for a new science nature tv channel.</p>
+				<p>We researched about the topic, picked the attributes that better represent the spirit of the channel, and made a brand identity proposal.</p>
+				<p>The deliverables were a series of videos: a reel that showcase the concept of the brand, two institutional separators, and three bumpers.</p>
+				<p>The work was presented to a jury, whom evaluated the entire project.</p>
+			</div>
+			<div class="item">
+				<div class="client-img"></div>
+			</div>
+			<div class="item">
+				<span>Responsibilities</span>
+			</div>
+			<div class="item">
+				<strong>Concept</strong>
+				<ul>
+					<li>Brand attributes.</li>
+					<li>Research about TV and motion design.</li>
+				</ul>
+			</div>
+			<div class="item">
+				<strong>Design</strong>
+				<ul>
+					<li>Logo design.</li>
+					<li>Brand indentity proposal.</li>
+					<li>Reel, separators &amp; bumpers design.</li>
+				</ul>
+			</div>
+			<div class="item">
+				<strong>Video editing</strong>
+				<ul>
+					<li>Adobe After Effects.</li>
+					<li>Final Cut Pro X.</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Grid -->
+		<div class="grid">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+	</div>
+
+	<!-- Screens -->
+	<div class="screens">
+
+		<!-- Video -->
+		<article class="video">
+			<iframe id="id_detailPlayer" frameborder="0" allowfullscreen="1" width="100%" height="100%" src="https://www.youtube.com/embed/Hbs57_jFeuo?autoplay=0&amp;controls=1&amp;showinfo=1&amp;rel=0&amp;start=0&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fwww.ignaciosans.com&amp;widgetid=1&amp;list=PL8IxMjvjQ32ji8Al5SQm4hWHUp869mYMb"></iframe>
+		</article>
+		
+		<!-- A -->
+		<article class="A">
+			<h3>Logo</h3>
+			<img src="../../../images/projects/10/A.jpg" alt="Logo">
+		</article>
+
+		<!-- B -->
+		<article class="B white">
+			<h3>Logo <span>Animation</span></h3>
+			<img src="../../../images/projects/10/B.jpg" alt="Logo - Animation">
+		</article>
+
+		<!-- C -->
+		<article class="C">
+			<h3>Logo <span>Applications &amp; constructive grid</span></h3>
+			<img src="../../../images/projects/10/C.jpg" alt="Logo - Applications &amp; constructive grid">
+			<div class="secuence">
+				<img src="../../../images/projects/10/secuence.gif" alt="Logo animation">
+			</div>
+		</article>
+
+		<!-- D -->
+		<article class="D">
+			<h3>Brand attributes</h3>
+			<img src="../../../images/projects/10/D.jpg" alt="Brand attributes">
+		</article>
+
+		<!-- E -->
+		<article class="E">
+			<img src="../../../images/projects/10/E.jpg" alt="">
+		</article>
+
+		<!-- F -->
+		<article class="F">
+			<img src="../../../images/projects/10/F.jpg" alt="">
+		</article>
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+
+		<div class="map-pattern"></div>
+
+		<div class="structure">
+
+			<!-- Nav -->
+			<div class="item">
+				<nav>
+					<ul>
+						<li><a href="#" title="Home" class="tc tc-home">Home</a></li>
+						<li><a href="#/wtf" title="About me" class="tc tc-about">WTF?</a></li>
+						<li><a href="#/projects" title="Projects" class="tc tc-projects">Projects</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Prev -->
+			<div class="item">
+				<a href="#/projects/09" title="Garbage Time app" class="project-link unload tc tc-project-prev">
+					<span>Garbage Time app</span>
+					<strong>Don't forget to take out garbage any more!</strong>
+					<i class="prev icon-arrow" id="id_prev" title="Previous">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="514.08px" height="514.08px" viewBox="0 0 514.08 514.08" style="enable-background:new 0 0 514.08 514.08;" xml:space="preserve">
+							<path class="background" d="M257.04,514.64c-139.633,0-257.6-117.967-257.6-257.6S117.407-0.56,257.04-0.56
+								c139.634,0,257.601,117.967,257.601,257.6S396.674,514.64,257.04,514.64z"/>
+							<path class="border" d="M514.08,257.04C514.08,117.706,396.375,0,257.04,0C117.706,0,0,117.706,0,257.04s117.706,257.04,257.04,257.04
+								C396.375,514.08,514.08,396.374,514.08,257.04z M257.04,489.6c-126.06,0-232.56-106.5-232.56-232.56
+								c0-126.06,106.5-232.56,232.56-232.56C383.1,24.48,489.6,130.98,489.6,257.04C489.6,383.1,383.1,489.6,257.04,489.6z"/>
+							<path class="theArrow" d="M265.693,174.946c-4.779-4.78-12.527-4.78-17.307,0l-110.16,110.16c-4.78,4.779-4.78,12.526,0,17.307
+								c4.778,4.78,12.526,4.78,17.307,0L257.04,200.907l101.507,101.506c2.394,2.393,5.521,3.586,8.653,3.586
+								c3.134,0,6.262-1.193,8.653-3.586c4.78-4.78,4.78-12.527,0-17.307L265.693,174.946z"/>
+						</svg>
+					</i>
+				</a>
+			</div>
+
+			<!-- Next -->
+			<div class="item">
+				<a href="#/projects/11" title="Tablón mediazine" class="project-link unload tc tc-project-next">
+					<span>Tablón mediazine</span>
+					<strong>Sports mag concept for tablet</strong>
+					<i class="next icon-arrow" id="id_next" title="Next">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="514.08px" height="514.08px" viewBox="0 0 514.08 514.08" style="enable-background:new 0 0 514.08 514.08;" xml:space="preserve">
+							<path class="background" d="M257.04,514.64c-139.633,0-257.6-117.967-257.6-257.6S117.407-0.56,257.04-0.56
+								c139.634,0,257.601,117.967,257.601,257.6S396.674,514.64,257.04,514.64z"/>
+							<path class="border" d="M514.08,257.04C514.08,117.706,396.375,0,257.04,0C117.706,0,0,117.706,0,257.04s117.706,257.04,257.04,257.04
+								C396.375,514.08,514.08,396.374,514.08,257.04z M257.04,489.6c-126.06,0-232.56-106.5-232.56-232.56
+								c0-126.06,106.5-232.56,232.56-232.56C383.1,24.48,489.6,130.98,489.6,257.04C489.6,383.1,383.1,489.6,257.04,489.6z"/>
+							<path class="theArrow" d="M265.693,174.946c-4.779-4.78-12.527-4.78-17.307,0l-110.16,110.16c-4.78,4.779-4.78,12.526,0,17.307
+								c4.778,4.78,12.526,4.78,17.307,0L257.04,200.907l101.507,101.506c2.394,2.393,5.521,3.586,8.653,3.586
+								c3.134,0,6.262-1.193,8.653-3.586c4.78-4.78,4.78-12.527,0-17.307L265.693,174.946z"/>
+						</svg>
+					</i>
+				</a>
+			</div>
+
+			<!-- Contact -->
+			<div class="item contact"><a href="mailto:hola@ignaciosans.com" title="E-mail me!" class="tc tc-email">hola@ignaciosans.com</a></div>
+
+		</div>
+
+	</footer>
+
+</div>
